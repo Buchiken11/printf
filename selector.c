@@ -2,8 +2,8 @@
 
 /**
  * *sel_handler - Function to check the string that was passed to it.
- * @str: a pointer to string
- * Return: the handlers
+ * @str: Pointer to string
+ * Return: The handlers
  */
 
 int (*sel_handler(char str))(va_list printarg)
@@ -26,4 +26,3 @@ int (*sel_handler(char str))(va_list printarg)
 	}
 	return (0);
 }
-
