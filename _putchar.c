@@ -1,6 +1,6 @@
 /**
  * _putchar -Function prints characters
- * @c: the variable passed to char
+ * @c: The variable passed to char
  * Return: 1
  */
 
