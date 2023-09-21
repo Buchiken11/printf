@@ -9,7 +9,6 @@
 
 int _printf(const char *format, ...)
 {
-	char s;
 	va_list printargs;
 	int i;
 	int numcount = 0;
@@ -37,9 +36,9 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				s = format[i];
-				_putchar(s);
-				numcount++;
+				_putchar('%');
+				_putchar(format[i]);
+				numcount += 2;
 			}
 		}
 		else
