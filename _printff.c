@@ -29,10 +29,17 @@ int _printf(const char *format, ...)
 			{
 				numcount += sel_handler(format[i])(printargs);
 			}
+			else if (format[i] == '%')
+			{
+				_putchar('%');
+				numcount++;
+			}
 			else
 			{
-				numcount += _putchar('%');
-				continue;
+				_putchar('%');
+				numcount++;
+				_putchar(format[i]);
+				numcount++;
 			}
 		}
 		else
